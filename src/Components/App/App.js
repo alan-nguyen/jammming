@@ -28,6 +28,27 @@ class App extends React.Component {
           id: 3,
         },
       ],
+      playlistName: 'Imagine Dragons music',
+      playlistTracks: [
+        {
+          name: 'Demons',
+          artist: 'Imagine Dragons',
+          album: 'Night Visions',
+          id: 4,
+        },
+        {
+          name: 'Natural',
+          artist: 'Imagine Dragons',
+          album: 'Origins',
+          id: 5,
+        },
+        {
+          name: 'Bad Liar',
+          artist: 'Imagine Dragons',
+          album: 'Origins',
+          id: 6,
+        },
+      ],
     };
   }
 
@@ -41,7 +62,7 @@ class App extends React.Component {
           <SearchBar />
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults} />
-            <Playlist />
+            <Playlist playlistTrack={this.state.playlistName} />
           </div>
         </div>
       </div>
