@@ -66,7 +66,11 @@ const Spotify = {
           headers: headers,
           method: 'POST',
           body: JSON.stringify({ name: name }),
-        });
+        })
+          .then((response) => response.json())
+          .then((jsonResponse) => {
+            const playlistId = jsonResponse.id;
+          });
       });
   },
 };
