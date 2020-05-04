@@ -1,5 +1,5 @@
 const clientId = '1c20b29457b94f69bc70b14d677499dc';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'http://pretty-office.surge.sh';
 let accessToken = '';
 
 // Spotify module
